@@ -7,7 +7,7 @@ from urllib.parse import parse_qs
 from urllib.request import Request, urlopen
 
 MODEL = os.environ.get("MODEL", "qwen3:1.7b")
-PORT = int(os.environ.get("WEB_PORT", "8000"))
+PORT = int(os.environ.get("WEB_PORT", "8080"))
 APP_NAME = os.environ.get("APP_NAME", "Qwen Web")
 OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
 
